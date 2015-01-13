@@ -1,0 +1,77 @@
+messageMeta
+configParams:<NONE>
+deployed:false
+enabled:true
+headerMeta:<NONE>
+inputMessageMeta
+columnDelimiter:|
+encoding:UTF-8
+fixedColumn:false
+prependHeader:false
+removeAfterSend:false
+rowDelimiter:\n
+inputPropertyMetaList
+inputPropertyMeta
+description:Category ID
+fieldId:CATEGORY_ID
+length:3
+optional:false
+type:char
+inputPropertyMeta
+description:Category Name
+fieldId:CATEGORY_NAME
+length:150
+optional:false
+type:char
+inputPropertyMeta
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+type:char
+lastModified:1268305066043
+messageTypeId:OSPDWH8556
+multiRow:true
+needNotification:false
+noConversion:false
+outputMessageMeta
+columnDelimiter:|
+distributionList:DWH.RECV
+encoding:UTF-8
+fixedColumn:false
+outputToQueue:false
+removeHeader:false
+rowDelimiter:\n
+schema:TRIONE_STAGE
+table:CDB_IF_8556
+outputPropertyMetaList
+outputPropertyMeta
+dbColumnDataType:0
+description:Category ID
+fieldId:CATEGORY_ID
+length:3
+optional:false
+sourceFieldId:CATEGORY_ID
+sourceFieldNum:0
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Category Name
+fieldId:CATEGORY_NAME
+length:150
+optional:false
+sourceFieldId:CATEGORY_NAME
+sourceFieldNum:1
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+sourceFieldId:INSERT_DT
+sourceFieldNum:2
+type:char
+receivingApplication:DWH
+sendingApplication:OSP
+version:3.0

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8' ?> 
+  <messageMeta>
+    <deployed>false</deployed>
+    <headerMeta/>
+    <noConversion>false</noConversion>
+    <needNotification>false</needNotification>
+    <version>3.0</version>
+    <outputPropertyMetaList>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>20</length>
+        <sourceFieldId>PRODUCT_ID</sourceFieldId>
+        <sourceFieldNum>0</sourceFieldNum>
+        <fieldId>PRODUCT_ID</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Product ID?</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>150</length>
+        <sourceFieldId>PRODUCT_NAME</sourceFieldId>
+        <sourceFieldNum>1</sourceFieldNum>
+        <fieldId>PRODUCT_NAME</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Product Name</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>3</length>
+        <sourceFieldId>CATEGORY_ID</sourceFieldId>
+        <sourceFieldNum>2</sourceFieldNum>
+        <fieldId>CATEGORY_ID</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Category ID</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>24</length>
+        <sourceFieldId>MODEL_SEQ</sourceFieldId>
+        <sourceFieldNum>3</sourceFieldNum>
+        <fieldId>MODEL_SEQ</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Model Sequence Number</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>8</length>
+        <sourceFieldId>INSERT_DT</sourceFieldId>
+        <sourceFieldNum>4</sourceFieldNum>
+        <fieldId>INSERT_DT</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Insert Date</description>
+      </outputPropertyMeta>
+    </outputPropertyMetaList>
+    <enabled>true</enabled>
+    <inputMessageMeta>
+      <removeAfterSend>false</removeAfterSend>
+      <encoding>UTF-8</encoding>
+      <columnDelimiter>|</columnDelimiter>
+      <prependHeader>false</prependHeader>
+      <fixedColumn>false</fixedColumn>
+      <rowDelimiter>\n</rowDelimiter>
+    </inputMessageMeta>
+    <messageTypeId>OSPDWH8557</messageTypeId>
+    <outputMessageMeta>
+      <outputToQueue>false</outputToQueue>
+      <encoding>UTF-8</encoding>
+      <schema>TRIONE_STAGE</schema>
+      <distributionList>DWH.RECV</distributionList>
+      <removeHeader>false</removeHeader>
+      <columnDelimiter>|</columnDelimiter>
+      <table>CDB_IF_8557</table>
+      <fixedColumn>false</fixedColumn>
+      <rowDelimiter>\n</rowDelimiter>
+    </outputMessageMeta>
+    <receivingApplication>DWH</receivingApplication>
+    <inputPropertyMetaList>
+      <inputPropertyMeta>
+        <fieldId>PRODUCT_ID</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>20</length>
+        <description>Product ID</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>PRODUCT_NAME</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>150</length>
+        <description>Product Name</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>CATEGORY_ID</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>3</length>
+        <description>Category ID</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>MODEL_SEQ</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>24</length>
+        <description>Model Sequence Number</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>INSERT_DT</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>8</length>
+        <description>Insert Date</description>
+      </inputPropertyMeta>
+    </inputPropertyMetaList>
+    <multiRow>true</multiRow>
+    <lastModified>1281325551000</lastModified>
+    <configParams/>
+    <sendingApplication>OSP</sendingApplication>
+  </messageMeta>

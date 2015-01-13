@@ -1,0 +1,107 @@
+messageMeta
+configParams:<NONE>
+deployed:false
+enabled:true
+headerMeta:<NONE>
+inputMessageMeta
+columnDelimiter:|
+encoding:UTF-8
+fixedColumn:false
+prependHeader:false
+removeAfterSend:false
+rowDelimiter:\n
+inputPropertyMetaList
+inputPropertyMeta
+description:Product ID
+fieldId:PRODUCT_ID
+length:20
+optional:false
+type:char
+inputPropertyMeta
+description:Product Name
+fieldId:PRODUCT_NAME
+length:150
+optional:false
+type:char
+inputPropertyMeta
+description:Category ID
+fieldId:CATEGORY_ID
+length:3
+optional:false
+type:char
+inputPropertyMeta
+description:Model Sequence Number
+fieldId:MODEL_SEQ
+length:24
+optional:false
+type:char
+inputPropertyMeta
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+type:char
+lastModified:1280729337517
+messageTypeId:OSPDWH8557
+multiRow:true
+needNotification:false
+noConversion:false
+outputMessageMeta
+columnDelimiter:|
+distributionList:DWH.RECV
+encoding:UTF-8
+fixedColumn:false
+outputToQueue:false
+removeHeader:false
+rowDelimiter:\n
+schema:TRIONE_STAGE
+table:CDB_IF_8557
+outputPropertyMetaList
+outputPropertyMeta
+dbColumnDataType:0
+description:Product ID?
+fieldId:PRODUCT_ID
+length:20
+optional:false
+sourceFieldId:PRODUCT_ID
+sourceFieldNum:0
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Product Name
+fieldId:PRODUCT_NAME
+length:150
+optional:false
+sourceFieldId:PRODUCT_NAME
+sourceFieldNum:1
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Category ID
+fieldId:CATEGORY_ID
+length:3
+optional:false
+sourceFieldId:CATEGORY_ID
+sourceFieldNum:2
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Model Sequence Number
+fieldId:MODEL_SEQ
+length:24
+optional:false
+sourceFieldId:MODEL_SEQ
+sourceFieldNum:3
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+sourceFieldId:INSERT_DT
+sourceFieldNum:4
+type:char
+receivingApplication:DWH
+sendingApplication:OSP
+version:3.0

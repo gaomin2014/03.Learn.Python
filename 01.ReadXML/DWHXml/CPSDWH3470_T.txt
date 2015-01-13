@@ -1,0 +1,121 @@
+messageMeta
+configParams:<NONE>
+deployed:false
+description:message from CPS to DWH
+enabled:true
+headerMeta:<NONE>
+inputMessageMeta
+encoding:GB2312
+fixedColumn:true
+prependHeader:false
+removeAfterSend:false
+rowDelimiter:\n
+inputPropertyMetaList
+inputPropertyMeta
+description:Product code
+fieldId:Product_Code
+length:15
+optional:false
+type:char
+inputPropertyMeta
+description:Month ID
+fieldId:Month_Week_ID
+length:1
+optional:false
+type:char
+inputPropertyMeta
+description:Sales Week
+fieldId:Sales_Week
+length:8
+optional:false
+type:char
+inputPropertyMeta
+description:Sales Qty
+fieldId:Sales_Qty
+length:9
+optional:false
+type:decimal
+inputPropertyMeta
+description:Creation date
+fieldId:Creation_Date
+length:10
+optional:false
+type:char
+inputPropertyMeta
+description:Creation time
+fieldId:Creation_Time
+length:8
+optional:false
+type:char
+lastModified:1151641908802
+messageTypeId:CPSDWH3470
+multiRow:true
+needNotification:false
+outputMessageMeta
+distributionList:DWH.RECV
+encoding:GB2312
+fixedColumn:true
+outputToQueue:false
+removeHeader:false
+rowDelimiter:\n
+schema:trione_stage
+table:cps_if_3470
+outputPropertyMetaList
+outputPropertyMeta
+dbColumnDataType:0
+description:Product code
+fieldId:MATCOD
+length:15
+optional:false
+sourceFieldId:Product_Code
+sourceFieldNum:0
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Month ID
+fieldId:DATE_SIGN
+length:1
+optional:false
+sourceFieldId:Month_Week_ID
+sourceFieldNum:1
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Sales Week
+fieldId:SFWEEK
+length:8
+optional:false
+sourceFieldId:Sales_Week
+sourceFieldNum:2
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Sales Qty
+fieldId:SALEQTY
+format:9
+length:9
+optional:false
+sourceFieldId:Sales_Qty
+sourceFieldNum:3
+type:decimal
+outputPropertyMeta
+dbColumnDataType:0
+description:Creation date
+fieldId:CRDAT
+length:10
+optional:false
+sourceFieldId:Creation_Date
+sourceFieldNum:4
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Creation time
+fieldId:CRTIME
+length:8
+optional:false
+sourceFieldId:Creation_Time
+sourceFieldNum:5
+type:char
+receivingApplication:DWH
+sendingApplication:CPS
+version:3.0

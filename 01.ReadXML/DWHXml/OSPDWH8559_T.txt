@@ -1,0 +1,77 @@
+messageMeta
+configParams:<NONE>
+deployed:false
+enabled:true
+headerMeta:<NONE>
+inputMessageMeta
+columnDelimiter:|
+encoding:UTF-8
+fixedColumn:false
+prependHeader:false
+removeAfterSend:false
+rowDelimiter:\n
+inputPropertyMetaList
+inputPropertyMeta
+description:Survey Status ID
+fieldId:SURVEY_STATUS_ID
+length:1
+optional:false
+type:char
+inputPropertyMeta
+description:Survey Status Name
+fieldId:STATUS_NAME
+length:30
+optional:false
+type:char
+inputPropertyMeta
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+type:char
+lastModified:1280729383907
+messageTypeId:OSPDWH8559
+multiRow:true
+needNotification:false
+noConversion:false
+outputMessageMeta
+columnDelimiter:|
+distributionList:DWH.RECV
+encoding:UTF-8
+fixedColumn:false
+outputToQueue:false
+removeHeader:false
+rowDelimiter:\n
+schema:TRIONE_STAGE
+table:CDB_IF_8559
+outputPropertyMetaList
+outputPropertyMeta
+dbColumnDataType:0
+description:Survey Status ID
+fieldId:SURVEY_STATUS_ID
+length:1
+optional:false
+sourceFieldId:SURVEY_STATUS_ID
+sourceFieldNum:0
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Survey Status Name
+fieldId:STATUS_NAME
+length:30
+optional:false
+sourceFieldId:STATUS_NAME
+sourceFieldNum:1
+type:char
+outputPropertyMeta
+dbColumnDataType:0
+description:Insert Date
+fieldId:INSERT_DT
+length:8
+optional:false
+sourceFieldId:INSERT_DT
+sourceFieldNum:2
+type:char
+receivingApplication:DWH
+sendingApplication:OSP
+version:3.0

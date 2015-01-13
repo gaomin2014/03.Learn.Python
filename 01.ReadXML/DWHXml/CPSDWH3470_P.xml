@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8' ?> 
+  <messageMeta>
+    <deployed>false</deployed>
+    <headerMeta/>
+    <needNotification>false</needNotification>
+    <version>3.0</version>
+    <outputPropertyMetaList>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>15</length>
+        <sourceFieldId>Product_Code</sourceFieldId>
+        <sourceFieldNum>0</sourceFieldNum>
+        <fieldId>MATCOD</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Product code</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>1</length>
+        <sourceFieldId>Month_Week_ID</sourceFieldId>
+        <sourceFieldNum>1</sourceFieldNum>
+        <fieldId>DATE_SIGN</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Month ID</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>8</length>
+        <sourceFieldId>Sales_Week</sourceFieldId>
+        <sourceFieldNum>2</sourceFieldNum>
+        <fieldId>SFWEEK</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Sales Week</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>9</length>
+        <sourceFieldId>Sales_Qty</sourceFieldId>
+        <sourceFieldNum>3</sourceFieldNum>
+        <fieldId>SALEQTY</fieldId>
+        <type>decimal</type>
+        <optional>false</optional>
+        <format>9</format>
+        <description>Sales Qty</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>10</length>
+        <sourceFieldId>Creation_Date</sourceFieldId>
+        <sourceFieldNum>4</sourceFieldNum>
+        <fieldId>CRDAT</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Creation date</description>
+      </outputPropertyMeta>
+      <outputPropertyMeta>
+        <dbColumnDataType>0</dbColumnDataType>
+        <length>8</length>
+        <sourceFieldId>Creation_Time</sourceFieldId>
+        <sourceFieldNum>5</sourceFieldNum>
+        <fieldId>CRTIME</fieldId>
+        <type>char</type>
+        <optional>false</optional>
+        <description>Creation time</description>
+      </outputPropertyMeta>
+    </outputPropertyMetaList>
+    <enabled>true</enabled>
+    <inputMessageMeta>
+      <removeAfterSend>false</removeAfterSend>
+      <encoding>GB2312</encoding>
+      <prependHeader>false</prependHeader>
+      <fixedColumn>true</fixedColumn>
+      <rowDelimiter>\n</rowDelimiter>
+    </inputMessageMeta>
+    <messageTypeId>CPSDWH3470</messageTypeId>
+    <outputMessageMeta>
+      <outputToQueue>false</outputToQueue>
+      <encoding>GB2312</encoding>
+      <schema>trione_stage</schema>
+      <distributionList>DWH.RECV</distributionList>
+      <removeHeader>false</removeHeader>
+      <table>cps_if_3470</table>
+      <fixedColumn>true</fixedColumn>
+      <rowDelimiter>\n</rowDelimiter>
+    </outputMessageMeta>
+    <description>message from CPS to DWH</description>
+    <receivingApplication>DWH</receivingApplication>
+    <inputPropertyMetaList>
+      <inputPropertyMeta>
+        <fieldId>Product_Code</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>15</length>
+        <description>Product code</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>Month_Week_ID</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>1</length>
+        <description>Month ID</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>Sales_Week</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>8</length>
+        <description>Sales Week</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>Sales_Qty</fieldId>
+        <optional>false</optional>
+        <type>decimal</type>
+        <length>9</length>
+        <description>Sales Qty</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>Creation_Date</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>10</length>
+        <description>Creation date</description>
+      </inputPropertyMeta>
+      <inputPropertyMeta>
+        <fieldId>Creation_Time</fieldId>
+        <optional>false</optional>
+        <type>char</type>
+        <length>8</length>
+        <description>Creation time</description>
+      </inputPropertyMeta>
+    </inputPropertyMetaList>
+    <multiRow>true</multiRow>
+    <lastModified>1151641908802</lastModified>
+    <configParams/>
+    <sendingApplication>CPS</sendingApplication>
+  </messageMeta>
